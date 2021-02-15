@@ -68,6 +68,10 @@ body{
 	top:70%;
 	left: 25%;
 }
+.l-btn3{
+	grid-area: 1 / 1 / span 2 / span 3;
+	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
 /*animação*/
 #btn-menu:checked ~ .l-btn2 span:nth-child(1){
 	transform: rotate(-45deg);
@@ -79,6 +83,9 @@ body{
 #btn-menu:checked ~ .l-btn2 span:nth-child(3){
 	transform: rotate(45deg);
 	top: 45%;
+}
+#btn-menu:checked ~ .l-btn3{
+	clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
 }
 
 
