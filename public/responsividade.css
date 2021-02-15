@@ -28,16 +28,58 @@ body{
 	height: 100%;
 	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
+/*menu-fundo*/
+
 #btn-menu{
 	grid-area: 1 / 4 / span 1 / span 1;
 	margin:auto;
 	z-index: 1;
+	opacity: 0;
 }
 #btn-menu:checked + .fundo-menu .fundo-menu2{
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
 }
-
-
+/*btn-menu*/
+.l-btn2{
+	grid-area: 1 / 4 / span 1 / span 1;
+	width: 100%;
+	height: 100%;
+	margin: auto;
+}
+.l-btn2{
+	position: relative;
+	height: 50px;
+	width: 50px;
+}
+.l-btn2 span{
+	position: absolute;
+	height: 5px;
+	width: 50%;
+}
+.l-btn2 span:nth-child(1){
+	top:20%;
+	left: 25%;
+}
+.l-btn2 span:nth-child(2){
+	top:45%;
+	left: 25%;
+}
+.l-btn2 span:nth-child(3){
+	top:70%;
+	left: 25%;
+}
+/*animação*/
+#btn-menu:checked ~ .l-btn2 span:nth-child(1){
+	transform: rotate(-45deg);
+	top: 45%;
+}
+#btn-menu:checked ~ .l-btn2 span:nth-child(2){
+	opacity: 0;
+}
+#btn-menu:checked ~ .l-btn2 span:nth-child(3){
+	transform: rotate(45deg);
+	top: 45%;
+}
 
 
 

@@ -6,7 +6,13 @@ function Home(){
                 <div className="fundo-menu2"></div>
                 <div className=""></div>
             </div>
+            <label for="btn-menu" class="l-btn2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </label>
         </div>
+        
     )
 }
 export default Home
