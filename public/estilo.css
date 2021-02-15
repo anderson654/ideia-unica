@@ -1,0 +1,12 @@
+html{
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(53,56,57,1) 50%);
+}
+body{
+	font-family: 'Hind Guntur', sans-serif;
+}
+.fundo-menu{
+	background: #fff;
+	transition: 0.25s ease-in-out;
+}
+
+
