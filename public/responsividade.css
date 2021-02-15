@@ -22,6 +22,10 @@ body{
 }
 .fundo-menu{
 	grid-area: 1 / 3 / span 2 / span 2;
+}
+.fundo-menu2{
+	width: 100%;
+	height: 100%;
 	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
 #btn-menu{
@@ -29,7 +33,7 @@ body{
 	margin:auto;
 	z-index: 1;
 }
-#btn-menu:checked + .fundo-menu{
+#btn-menu:checked + .fundo-menu .fundo-menu2{
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
 }
 
