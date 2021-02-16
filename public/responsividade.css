@@ -10,7 +10,7 @@ html{
 body{
 	/*propriedades do grid*/
 	display: grid;
-    grid-template-columns: 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw;
+    grid-template-columns: 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3333vw 8.3334vw 8.3334vw 8.3334vw 8.3334vw;
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
     overflow: hidden;
 }
@@ -60,8 +60,6 @@ body{
 	grid-area: 1 / 1 / span 2 / span 3;
 	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
-/*animação*/
-
 /*checkbox-pos*/
 #checkbox-1{
 	grid-area: 1 / 4 / span 1 / span 1;
