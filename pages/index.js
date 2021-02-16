@@ -1,17 +1,16 @@
 function Home(){
     return (
-        <div className="menu">
-            <input type="checkbox" id="btn-menu"/>
-            <div className="fundo-menu shadow-menu">
-                <div className="fundo-menu2"></div>
-                <div className=""></div>
+        <div className="menu-grid">
+            <input type="checkbox" id="checkbox-1"/>
+            <div className="pos-menu shadow-menu">
+                <div className="background-menu"></div>
             </div>
-            <label for="btn-menu" class="l-btn2">
+            <label htmlFor="checkbox-1" className="l-btn1">
                     <span></span>
                     <span></span>
                     <span></span>
             </label>
-            <label for="btn-menu" class="l-btn3"></label>
+            <label htmlFor="checkbox-1" className="l-btn2"></label>
         </div>
         
     )

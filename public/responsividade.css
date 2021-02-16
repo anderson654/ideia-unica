@@ -14,80 +14,59 @@ body{
     grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
     overflow: hidden;
 }
-.menu{
+/*menu*/
+.menu-grid{
 	grid-area: 1 / 1 / span 1 / span 12;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw 25vw;
     grid-template-rows: 10vh 90vh;
 }
-.fundo-menu{
+.pos-menu{
 	grid-area: 1 / 3 / span 2 / span 2;
 }
-.fundo-menu2{
+.background-menu{
 	width: 100%;
 	height: 100%;
 	clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
 }
-/*menu-fundo*/
-
-#btn-menu{
+/*l-btn1*/
+.l-btn1{
 	grid-area: 1 / 4 / span 1 / span 1;
-	margin:auto;
-	z-index: 1;
-	opacity: 0;
-}
-#btn-menu:checked + .fundo-menu .fundo-menu2{
-	clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%);
-}
-/*btn-menu*/
-.l-btn2{
-	grid-area: 1 / 4 / span 1 / span 1;
-	width: 100%;
-	height: 100%;
-	margin: auto;
-}
-.l-btn2{
 	position: relative;
+	display: block;
+	margin: auto;
 	height: 50px;
 	width: 50px;
 }
-.l-btn2 span{
+.l-btn1 span{
 	position: absolute;
 	height: 5px;
 	width: 50%;
 }
-.l-btn2 span:nth-child(1){
+.l-btn1 span:nth-child(1){
 	top:20%;
 	left: 25%;
 }
-.l-btn2 span:nth-child(2){
+.l-btn1 span:nth-child(2){
 	top:45%;
 	left: 25%;
 }
-.l-btn2 span:nth-child(3){
+.l-btn1 span:nth-child(3){
 	top:70%;
 	left: 25%;
 }
-.l-btn3{
+/*l-btn2*/
+.l-btn2{
 	grid-area: 1 / 1 / span 2 / span 3;
 	clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
 }
 /*animação*/
-#btn-menu:checked ~ .l-btn2 span:nth-child(1){
-	transform: rotate(-45deg);
-	top: 45%;
-}
-#btn-menu:checked ~ .l-btn2 span:nth-child(2){
-	opacity: 0;
-}
-#btn-menu:checked ~ .l-btn2 span:nth-child(3){
-	transform: rotate(45deg);
-	top: 45%;
-}
-#btn-menu:checked ~ .l-btn3{
-	clip-path: polygon(0 0, 78% 0, 100% 100%, 0% 100%);
-}
 
-
+/*checkbox-pos*/
+#checkbox-1{
+	grid-area: 1 / 4 / span 1 / span 1;
+	margin:auto;
+	opacity: 1;
+}
 
 
