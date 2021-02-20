@@ -1,4 +1,5 @@
 import { connectToDatabase } from '../../../utils/mongoDb'
+
 async function  handler (req, res) {
     if (req.method === 'GET') {
         const {db} = await connectToDatabase();
