@@ -1,7 +1,5 @@
-import '../public/estilo.css';
-import '../public/normalize.css'
-import '../public/responsividade.css'
-import '../public/animation.css'
+import '../public/style.css';
+import '../public/normalize.css';
 export default function MyApp({Component,pageProps}){
     return <Component{...pageProps} />
 };

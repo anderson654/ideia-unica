@@ -1,0 +1,19 @@
+html{
+	/**/
+	/*propriedades*/
+	width: 100%;
+	height: 100%;
+	margin: 0;
+    padding: 0;
+    overflow: hidden;
+	/*estilo*/
+	background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(53,56,57,1) 50%);
+}
+body{
+	display: grid;
+    grid-template-columns: 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw 8.33vw;
+    grid-template-rows: 20vh 20vh 20vh 20vh 20vh;
+    overflow: hidden;
+
+	font-family: 'Hind Guntur', sans-serif;
+}
