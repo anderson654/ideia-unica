@@ -1,7 +1,5 @@
-
 const axios = require('axios');
-
-
+dadosDeCadastro();
 function Home(){
     return <div>
                 <h1>Hello</h1>
